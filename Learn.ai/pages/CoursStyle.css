@@ -5,8 +5,8 @@ html {
     margin: 0%;
     border: 0%;
     opacity: 1;
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: var(--backgroundColor);
+    color: var(--AC1-TEXT);
     font-family: 'Hanken Grotesk';
 }
 
@@ -38,7 +38,7 @@ body {
     padding: 0.5em;
     gap: 0.5em;
     height: 3.5em;
-    background-color: #00000080;
+    background-color: var(--overlayColor);
     border-bottom: 1px solid #80808080;
     margin-bottom: 3.5em;
     align-items: center;
@@ -48,29 +48,64 @@ body {
     justify-content: center;
 }
 
-.topper img {
+.topper .img {
     height: 100%;
-    width: auto;
+    width: 100%;
+    background-image: var(--LOGO);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-:root {
-    --AC1-PRIMARY: #2daa0b;
-    --AC1-TEXT: #ffffff;
-    --AC1-SECONDARY: #4dc917;
-    --AC1-TERITARY: #1b621e;
-
-    --AC2-PRIMARY: #0080FF;
-    --AC2-TEXT: #0066e3;
-    --AC2-SECONDARY: #0080FF80;
-    --AC2-TERITARY: #0080FF40;
-
-    --Display: 'Metal';
-
-    --AutoWidth: auto;
+@media (prefers-color-scheme: light){
+    :root {
+        --LOGO: url(graphics/Logo&Texte1.png);
+    
+        --AC1-PRIMARY: #1b621e;
+        --AC1-TEXT: #000;
+        --AC1-SECONDARY: #4dc917;
+        --AC1-TERITARY: #2daa0b;
+    
+        --AC2-PRIMARY: #0080FF;
+        --AC2-TEXT: #0066e3;
+        --AC2-SECONDARY: #0080FF80;
+        --AC2-TERITARY: #0080FF40;
+    
+        --Display: 'Metal';
+    
+        --AutoWidth: auto;
+    
+        --backgroundColor: #FFF;
+        --overlayColor: #FFFFFF80;
+    }
 }
+
+@media (prefers-color-scheme: dark){
+    :root {
+        --LOGO: url(graphics/Logo&Texte.png);
+    
+        --AC1-PRIMARY: #2daa0b;
+        --AC1-TEXT: #ffffff;
+        --AC1-SECONDARY: #4dc917;
+        --AC1-TERITARY: #1b621e;
+    
+        --AC2-PRIMARY: #0080FF;
+        --AC2-TEXT: #0066e3;
+        --AC2-SECONDARY: #0080FF80;
+        --AC2-TERITARY: #0080FF40;
+    
+        --Display: 'Metal';
+    
+        --AutoWidth: auto;
+    
+        --backgroundColor: #000000;
+        --overlayColor: #00000080;
+    }
+}
+
 
 body h1 {
-    color: #ffffff;
+    color: var(--AC1-TEXT);
     font-weight: bolder;
     font-family: 'hanken grotesk';
     scroll-snap-align: start;
@@ -80,7 +115,8 @@ body h1 {
 }
 
 sub {
-    color: #ffffff80;
+    color: var(--AC1-TEXT);
+    opacity: 0.5;
     font-weight: bolder;
     font-family: 'hanken grotesk';
     font-size: large;
@@ -91,7 +127,8 @@ sub {
 }
 
 body h2 {
-    color: #ffffffEE;
+    color: var(--AC1-TEXT);
+    opacity: 0.9;
     font-weight: bolder;
     font-family: 'hanken grotesk';
     scroll-snap-align: start;
@@ -102,7 +139,8 @@ body h2 {
 }
 
 h3 {
-    color: #ffffffCC;
+    color: var(--AC1-TEXT);
+    opacity: 0.8;
     font-weight: normal;
     text-wrap: wrap;
     font-family: 'hanken grotesk';
@@ -214,7 +252,7 @@ li {
 
 input {
     border: none;
-    background-color: #FFFFFF20;
+    background-color: #80808020;
     color: var(--AC1-TEXT);
     height: 0rem;
     padding: 1.5em;
@@ -239,8 +277,8 @@ input {
 
 input:focus-visible {
     outline: none; 
-    box-shadow: inset  0px 0px 0.5em 0px #ffffff10;
-    background-color: #FFFFFF30;
+    box-shadow: inset  0px 0px 0.5em 0px #80808010;
+    background-color: #80808030;
 }
 
 .button {
@@ -270,7 +308,7 @@ input:focus-visible {
 
 input[type="file" i] {
     border: none;
-    background-color: #FFFFFF20;
+    background-color: #80808020;
     color: var(--AC1-TEXT);
     height: auto;
     padding: 1.5em;

@@ -103,9 +103,12 @@
     }
 
     .topper .img {
-        height: 1em;
-        width: 2em;
+        height: 100%;
+        width: 100%;
         background-image: url(graphics/Logo&Texte.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
 
@@ -691,7 +694,7 @@ button:hover img,button:hover p {
     .topper .img {
         height: 100%;
         width: 100%;
-        background-image: url(graphics/Logo&Texte.png);
+        background-image: url(graphics/Logo&Texte1.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
