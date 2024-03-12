@@ -1,0 +1,6 @@
+COverview.php / CChapter.php / CLesson.php 
+
+Les fichiers seront remplis sur la base d'une base de données contenant les cours, leurs chapitres, 
+les lessons de leurs chapitres et le contenu de leurs lessons. 
+
+La base de données ressemblerait à ce tableau : [à voir encore]
