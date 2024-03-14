@@ -83,6 +83,8 @@ body {
         --layerColor: #80808020;
         --backgroundColor: #FFF;
         --overlayColor: #FFFFFF80;
+
+        --contrastify: brightness(0%);
     }
 }
 
@@ -109,6 +111,8 @@ body {
         --layerColor: #80808020;
         --backgroundColor: #000000;
         --overlayColor: #00000080;
+
+        --contrastify: brightness(1000%);
     }
 }
 
@@ -433,6 +437,12 @@ a {
     cursor:pointer;
 }
 
+@keyframes themenu {
+    0% {align-self: right;}
+
+    100% {align-self: center;}
+}
+
 .overview {
     margin: 4.5em 20% 4.5em 20%;
     display: flex;
@@ -452,6 +462,7 @@ a {
     box-sizing: border-box;
     min-width: 20cqw;
     align-self: center;
+    width: 80%;
     max-width: 90%;
     gap: 1em;
 }
@@ -464,6 +475,21 @@ a {
     box-sizing: border-box;
     display: flex;
     background-color: #80808010;
+    border: 1px solid #80808040;
+    justify-content: space-between;
+    animation: unblur1;
+    animation-duration: 500ms;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(0.160, 0.80, 0.40, 1);
+}
+
+.link p, .link img {
+    filter: var(--contrastify);
+    font-size: medium;
+}
+
+.link:hover {
+    background-color: #80808040;
     border: 1px solid #80808040;
 }
 
