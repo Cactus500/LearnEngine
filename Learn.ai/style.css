@@ -5,6 +5,7 @@ html {
     margin: 0%;
     border: 0%;
     opacity: 1;
+    
     background-image: linear-gradient(#808080BE 0.1em, transparent 0.1em), linear-gradient(to right, #808080BE 0.1em, #00000000 0.1em);
     background-size: 2em 2em;
     background-color: #000000;
