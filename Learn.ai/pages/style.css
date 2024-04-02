@@ -1199,3 +1199,26 @@ button:hover img,button:hover p {
 }*/
 
 }
+
+.button2 {
+    display: flex;
+    flex-direction: row;
+    gap: 0%;
+    font-family: 'Metal';
+    font-size: large;
+    font-weight: normal;
+    padding: 0%;
+    background-color: #00000000;
+}
+
+.button2:hover {
+    background-color: #00000000;
+    filter: brightness(120%) saturate(150%);
+}
+
+.button2 div {
+    height: 100%;
+    font-size: 120%;
+    align-content: center;
+    letter-spacing: normal;
+}
