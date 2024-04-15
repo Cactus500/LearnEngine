@@ -39,7 +39,6 @@
         background-size: 100%;
         overflow: auto;
         scroll-snap-type: both mandatory;
-        overscroll-behavior-x: contain;
     }
 
     :root {
