@@ -387,6 +387,10 @@
         }
     }
 
+    .UJCRINLEUCN {
+        filter: brightness(2);
+    }
+
     .libraryGrid {
         margin: 11.5em 20% 4.5em 20%;
         display: flex;
@@ -1326,6 +1330,10 @@ button:hover img,button:hover p {
         color: #FFF;
         outline: #FF0070 solid 2px;
         transition: ease-in-out 200ms;
+    }
+
+    .UJCRINLEUCN {
+        filter: brightness(0);
     }
 
     /*.svg {
