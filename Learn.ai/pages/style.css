@@ -108,6 +108,7 @@
         position: fixed;
         z-index: 3;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     @keyframes downslide {
@@ -401,7 +402,8 @@
         flex-wrap: wrap;
         max-width: 90%;
         width: 100%;
-        gap: 1%;
+        gap: 1em;
+        
     }
 
     .boite {
@@ -414,8 +416,9 @@
         flex-direction: column;
         align-content: center;
         align-items: center;
-        width: 24%;
-        min-width: 16em;
+        flex: 1 0 0;
+        max-width: 100%;
+        min-width: 18em;
         height: 14em;
         gap: 0.5em;
         margin-top: 3em;
@@ -636,6 +639,7 @@ button:hover img,button:hover p {
         color: #FFF;
         border-radius: 0.75em;
         transition: ease-in-out 200ms;
+        text-wrap: nowrap;
     }
 
     .filter:hover {
@@ -1075,9 +1079,10 @@ button:hover img,button:hover p {
         flex-direction: column;
         align-content: center;
         align-items: center;
-        width: 24%;
+        flex: 1 0 0;
+        max-width: 100%;
+        min-width: 18em;
         height: 14em;
-        min-width: 16em;
         gap: 0.5em;
         justify-content: flex-end;
         margin-top: 4em;

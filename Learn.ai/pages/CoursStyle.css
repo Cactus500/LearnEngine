@@ -61,7 +61,7 @@ body {
 
 @media (prefers-color-scheme: light){
     :root {
-        --LOGO: url(graphics/Logo&Texte1.png);
+        --LOGO: url(graphics/Logo&Texte4.png);
 
         --ill1: url(graphics/illustrations/Design/Colors/Schemes/complementay.png);
         --ill2: ;
@@ -90,7 +90,7 @@ body {
 
 @media (prefers-color-scheme: dark){
     :root {
-        --LOGO: url(graphics/Logo&Texte.png);
+        --LOGO: url(graphics/Logo&Texte3.png);
 
         --ill1: url(graphics/illustrations/ColorSchemes.png);
     
